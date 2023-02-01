@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poornima Fitness</title>
+</head>
+<link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fredoka+One&family=Moon+Dance&family=Ubuntu+Mono:ital@1&family=Ubuntu:ital,wght@1,700&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/boxer(background).jpg');
+        color: white;
+        font-family: 'Fredoka One', cursive;
+
+    }
+
+    .left {
+        display: inline-block;
+        /*border: 2px solid red;*/
+        position: absolute;
+        left: 50px;
+        top: 20px;
+
+    }
+
+    .left img {
+        display: block;
+        width: 110px;
+        margin: auto;
+    }
+
+    .left div {
+        font-style: italic;
+        font-size: 25px;
+    }
+
+    .mid {
+        /*border: 2px solid darkgreen;*/
+        display: block;
+        width: 45%;
+        margin: 20px auto;
+
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 30px;
+        /*border: 2px solid yellow;*/
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: underline;
+        padding: 8px;
+        margin: 0px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: none;
+        color: goldenrod;
+
+    }
+
+    .btn {
+        margin: 0px 10px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid rgb(52, 47, 1);
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: 'Fredoka One', cursive;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(114, 95, 0);
+    }
+
+    .container {
+        /*border: 2px solid white;*/
+        margin: 10px 10px;
+        padding: 65px;
+        width: 36%;
+        border-radius: 25px;
+    }
+    .form-group input{
+        display: block;
+        text-align: center;
+        width: 350px;
+        padding: 5px;
+        border: 2px solid black;
+        margin: 15px auto;
+        font-size: 20px;
+        border-radius: 10px;
+        font-family: 'Fredoka One', cursive;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 80%;
+        margin: 34px auto;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/gym_logo.jpg" alt="">
+            <div>The Muscle Studio</div>
+
+
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <!--r right box for buttons  -->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+
+
+        </div>
+    </header>
+    <div class="container">
+       <h1>Join the best Gym of Lucknow NOW!!</h1>
+       <form action="noaction.php">
+       <div class="form-group">
+        <input type="text" name="" placeholder="Enter Your Name">
+        <input type="text" name="" placeholder="Enter Your Age">
+        <input type="text" name="" placeholder="Enter Your Gender">
+        <input type="text" name="" placeholder="Enter Your Locality">
+        <!--<input type="text" name="" placeholder="Enter Your Phone Number">
+        <input type="text" name="" placeholder="Enter Your Email Id">-->
+       </div>
+       <button class="btn">Submit</button>
+    </form>
+    </div>
+</body>
+
+</html>
